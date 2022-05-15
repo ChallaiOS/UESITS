@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeluguContentActivity"
+    android:keepScreenOn="true"
+    android:background="?attr/bgColor"
+    android:orientation="vertical">
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottom_navigation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            app:itemBackground="@color/colorPrimary"-->
+<!--            app:itemIconTint="@drawable/nav_item_color_state"-->
+<!--            app:itemTextColor="@drawable/nav_item_color_state" />-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/titleIDLabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:text=""-->
+<!--            android:textColor="@android:color/holo_blue_light"-->
+<!--            android:scrollbars="none"-->
+<!--            android:gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:lineSpacingExtra="10dp" />-->
+
+        <Button android:id="@+id/sharecumTitleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:visibility="visible"
+            android:textColor="#F4F6F7"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/local_id"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:text="myText1"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_centerVertical="true"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/shareBtmUpdate"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:text=""-->
+<!--            android:visibility="visible"-->
+<!--            android:icon="@drawable/ic_share_white"-->
+<!--            android:layout_marginRight="@+id/titleIDLabel"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            />-->
+
+
+<!--        <Button-->
+<!--            android:layout_width="10dp"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:id="@+id/share"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_toRightOf="@+id/titleIDLabel"-->
+<!--            android:layout_height="10dp"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/line"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:text=""-->
+<!--            android:visibility="visible"-->
+<!--            android:textColor="#F4F6F7"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_toRightOf="@+id/sharecumTitleBtn"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            />-->
+
+
+        <TextView
+            android:id="@+id/textContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text=""
+            android:scrollbars="none"
+            android:textStyle="normal"
+            android:textColor="?attr/textColor"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/line"
+            android:layout_marginBottom="10dp"
+            android:lineSpacingExtra="10dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E8E8"
+    tools:context=".LoginActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/loginLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="18dp"-->
+<!--        android:text=" VIEW"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:scrollbars="none"-->
+<!--        android:textStyle="normal"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:lineSpacingExtra="10dp" />-->
+
+    <Button android:id="@+id/loginLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ALREADY DONATED USER"
+        android:visibility="visible"
+        android:textColor="#F4F6F7"
+        android:textStyle="normal"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:hint="Email Address*"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="150dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionDone" />
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:hint="Password*"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editText1"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="60dp"
+        android:text="Submit"
+        android:background="@drawable/rounded_button"
+        />
+
+
+    <Button
+        android:id="@+id/forgotBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/submitBtn"
+        android:layout_marginLeft="60dp"
+        android:text="Forgot Password?"
+        android:background="@drawable/rounded_button"
+        />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/forgotBtn"
+        android:layout_marginLeft="60dp"
+        android:text="BACK TO HOME"
+        android:visibility="invisible"
+        android:background="@drawable/rounded_button"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        android:visibility="gone"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

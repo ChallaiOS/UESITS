@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E8E8"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterSSActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button android:id="@+id/registerLabel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="NEW USER"
+                android:visibility="visible"
+                android:textColor="#F4F6F7"
+                android:textStyle="normal"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerState"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/default_margin"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerDonation"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/spinnerState"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/default_margin"
+                />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:hint="UserName*"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:layout_below="@+id/spinnerDonation"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone" />
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:hint="Mobile Number*"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/editText1"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone" />
+
+
+
+            <EditText
+                android:id="@+id/editText3"
+                android:hint="Email Address*"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="40dp"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone" />
+
+
+
+            <EditText
+                android:id="@+id/editText4"
+                android:hint="Password*"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:layout_below="@+id/editText3"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:hint="Confirm Password*"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_below="@+id/editText4"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/editText5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Pay 100 rs"
+                android:background="@drawable/rounded_button"
+                />
+
+            <Button
+                android:id="@+id/donatedAlreadyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/submitBtn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Already Paid For Book"
+                android:background="@drawable/rounded_button"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        android:visibility="gone"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

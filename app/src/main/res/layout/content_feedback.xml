@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0E1DE"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main1">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Note: If you find mistake in any song,please update us. We will modify in the next version"
+        android:textColor="@android:color/black"
+        android:scrollbars="none"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="10dp" />
+
+    <EditText
+        android:id="@+id/feedback"
+        android:hint="We love to hear your feedback:"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/label"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionDone" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/feedback"
+        android:layout_marginLeft="60dp"
+        android:text="SUBMIT"
+        android:visibility="visible"
+        android:background="@drawable/rounded_button"
+        />
+
+</RelativeLayout>

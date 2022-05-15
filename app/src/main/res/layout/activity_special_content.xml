@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="?attr/bgColor"
+    android:orientation="vertical"
+    tools:context=".SpecialContentActivity">
+
+
+    <Button android:id="@+id/sharecumTitleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:visibility="visible"
+        android:textColor="#F4F6F7"
+        android:textStyle="normal"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <TextView
+        android:id="@+id/textContent4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:scrollbars="none"
+        android:textStyle="normal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="10dp" />
+
+</LinearLayout>

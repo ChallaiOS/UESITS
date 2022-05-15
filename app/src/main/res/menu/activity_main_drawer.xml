@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="VidyarthiGeethavali"
+        android:drawable="@color/customColor">
+        <menu>
+                    <item
+                        android:id="@+id/nav_telugu"
+                        android:title="Telugu Songs" />
+                    <item
+                        android:id="@+id/nav_english"
+                        android:title="English Songs" />
+                    <item
+                        android:id="@+id/nav_hindi"
+                        android:title="Hindi Songs" />
+                    <item
+                        android:id="@+id/nav_special"
+                        android:title="Special Index" />
+        </menu>
+    </item>
+
+
+    <item android:title="SearchtheScriptures"
+        android:drawable="@color/customColor">
+
+        <menu>
+            <item
+                android:id="@+id/introduction"
+                android:title="Introduction" />
+
+            <item
+                android:id="@+id/first_year"
+                android:title="First Year" />
+
+            <item
+                android:id="@+id/second_year"
+                android:title="Second year" />
+
+            <item
+                android:id="@+id/third_year"
+                android:title="Third Year" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Other Details"
+        android:drawable="@color/customColor">
+
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:title="Feedback" />
+
+            <item
+                android:id="@+id/nav_privacy"
+                android:title="Privacy Policy" />
+
+            <item
+                android:id="@+id/nav_terms"
+                android:title="Terms and Conditions" />
+
+            <item
+                android:id="@+id/nav_aboutus"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:title="Contact Us" />
+
+
+        </menu>
+    </item>
+
+</menu>

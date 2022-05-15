@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".IntroductionSSActivity"
+    tools:showIn="@layout/app_bar_main6">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/recycler5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduction"
+        android:id="@+id/year_three_index"
+        android:lineSpacingExtra="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button android:id="@+id/donateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Donate for Book"
+        android:visibility="visible"
+        android:textColor="#F4F6F7"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <!--    <Button android:id="@+id/paymentBtn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Donate for all Songs"-->
+    <!--        android:visibility="invisible"-->
+    <!--        />-->
+
+</RelativeLayout>
